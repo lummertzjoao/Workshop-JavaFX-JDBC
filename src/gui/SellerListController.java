@@ -111,7 +111,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 	}
 
 	private void removeEntity(Seller obj) {
-		Optional<ButtonType> result = Alerts.showConfirmation("Confirmation", "Are you sure you want to delete this department?");
+		Optional<ButtonType> result = Alerts.showConfirmation("Confirmation", "Are you sure you want to delete this seller?");
 		if (result.get() == ButtonType.OK) {
 			if (departmentService == null) {
 				throw new IllegalStateException("Service is null");
